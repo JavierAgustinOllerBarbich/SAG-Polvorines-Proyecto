@@ -260,13 +260,6 @@ a {
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 
-.sidebar .jugadores img {
-	border-radius: 100%;
-	height: 10em; 
-	width: 10em; 
-	margin-bottom: 1.5625em; 
-}
-
 .input {
 	background: #bea8a8;
 	color: #ffebdc;
@@ -324,7 +317,40 @@ a {
 	.body {
 		font-size: 12px;
 	}
- 
+
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+	}
+
+	.naviation {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	.navigation ul {
+		display: none;
+	}
+
+	.naviation ul.header {
+		display: block;
+	}
+	
+	.naviation ul li {
+		display: block;
+	}
+	
+	.naviation ul li a {
+		display: block;
+		padding: 0.5rem 0;
+		border-radius: .3em;
+		transition: all 0.4s linear;
+	}
+	
+	.naviation ul li a:hover {
+		background: #4a4a4a;
+		font-size: 1.1em;
+	}
 
 	.article-destacado {
 		font-size: 12px;
