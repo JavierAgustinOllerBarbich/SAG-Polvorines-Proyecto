@@ -73,53 +73,7 @@ a {
 .nav-item:hover {
 	background-color: #4a4a4a;
 }
-/*
-.SAG-nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	flex-wrap: wrap;
 
-}
-
-.menu-icon {
-	display: none;
-}
-
-.naviation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-.naviation ul li {
-    display: inline-block;
-}
-
-.naviation ul li a {
-    display: block;
-    padding: 0.5rem 1rem;
-	border-radius: .3em;
-    transition: all 0.4s linear;
-}
-
-.naviation ul li a:hover {
-    background: #4a4a4a;
-}
-
-.SAG {
-    letter-spacing: 15px;
-    font-size: 1.3em;
-
-}
-
-.header a {
-    text-decoration: none;
-    color: white;
-}
-
-*/
 
 
 
