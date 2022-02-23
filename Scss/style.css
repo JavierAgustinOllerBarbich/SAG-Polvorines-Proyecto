@@ -15,17 +15,7 @@ body {
   background-size: cover;
 }
 
-body img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-body a {
-  text-decoration: none;
-}
-
-body:before {
+.body:before {
   content: icon;
   width: 100%;
   height: 100%;
@@ -34,60 +24,14 @@ body:before {
   opacity: 0.6;
 }
 
-body .container {
-  width: 90%;
-  max-width: 75em;
-  margin: 1.25em auto;
-  display: grid;
-  grid-gap: 1.25em;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido	 	contenido 	aside' 'footer	 		footer 		footer';
-  /*aca tienen q ir muchas cosas mas*/
-}
-
-body .container header {
-  grid-template-areas: header;
-  grid-column: 1/-1;
-  color: #ffffff;
-  padding: 2rem 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-body .container article-destacado {
-  grid-area: destacado;
-  color: white;
-  background-color: #000;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-}
-
-body .container article-destacado container-texto {
-  padding: 1.25em;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-body .container article-destacado container-texto titulo {
-  margin-bottom: 0.625rem;
-  font-size: 1.56em;
-}
-
-body .container article-destacado container-texto titulo:after {
-  content: '';
-  margin: 0.625em 0;
-  display: block;
-  background-color: #868686;
-  width: 6em;
-  height: 1px;
-}
-
-body .container article-destacado container-texto titulo a {
-  color: #fff;
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -99,55 +43,18 @@ body .container article-destacado container-texto titulo a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido	 	contenido 	aside' 'footer	 		footer 		footer';
-  /*aca tienen q ir muchas cosas mas*/
 }
 
-.container header {
+.navbar .img {
+  width: 100px;
+}
+
+.header {
   grid-template-areas: header;
   grid-column: 1/-1;
   color: #ffffff;
   padding: 2rem 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.container article-destacado {
-  grid-area: destacado;
-  color: white;
-  background-color: #000;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-}
-
-.container article-destacado container-texto {
-  padding: 1.25em;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.container article-destacado container-texto titulo {
-  margin-bottom: 0.625rem;
-  font-size: 1.56em;
-}
-
-.container article-destacado container-texto titulo:after {
-  content: '';
-  margin: 0.625em 0;
-  display: block;
-  background-color: #868686;
-  width: 6em;
-  height: 1px;
-}
-
-.container article-destacado container-texto titulo a {
-  color: #fff;
-}
-
-.navbar .img {
-  width: 100px;
 }
 
 .nav-item {
@@ -214,6 +121,24 @@ body .container article-destacado container-texto titulo a {
   width: 100%;
 }
 
+.article-destacado {
+  grid-area: destacado;
+  color: white;
+  background-color: #000;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+}
+
+.article-destacado .container-texto {
+  padding: 1.25em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .article-destacado .container-thumbnail {
   min-height: 100%;
   width: 100%;
@@ -230,6 +155,10 @@ body .container article-destacado container-texto titulo a {
   font-size: 1.56em;
 }
 
+.article-destacado .titulo a {
+  color: #fff;
+}
+
 .article-destacado .titulo::after {
   content: '';
   margin: 0.625em 0;
@@ -237,6 +166,10 @@ body .container article-destacado container-texto titulo a {
   background-color: #868686;
   width: 6em;
   height: 1px;
+}
+
+.article-destacado .iframe {
+  width: 100%;
 }
 
 .btn-link {
@@ -265,6 +198,7 @@ body .container article-destacado container-texto titulo a {
   grid-gap: 20px;
 }
 
+/*sidebar*/
 .sidebar {
   grid-template-areas: sidebar;
   padding: 5em 25px;
@@ -331,23 +265,64 @@ body .container article-destacado container-texto titulo a {
 }
 
 @media only screen and (max-width: 480px) {
-  .body {
-    font-size: 12px;
-  }
-  .body .naviation {
+  .naviation {
     width: 100%;
     margin-top: 1rem;
   }
-  .body .naviation ul li {
+  .naviation ul li {
     display: block;
   }
-  .body .naviation ul li a {
+  .naviation ul li a {
     display: block;
     padding: 0.5rem 0;
     transition: all 0.4s linear;
     border-radius: 5px;
   }
-  .body .naviation ul li a:hover {
+  .naviation ul li a:hover {
     background: #4a4a4a;
+  }
+  .body {
+    font-size: 12px;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .naviation {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .naviation ul.header {
+    display: block;
+  }
+  .naviation ul li {
+    display: block;
+  }
+  .naviation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    border-radius: .3em;
+    transition: all 0.4s linear;
+  }
+  .naviation ul li a:hover {
+    background: #4a4a4a;
+    font-size: 1.1em;
+  }
+  .article-destacado {
+    font-size: 12px;
+    grid-template-columns: 1fr;
+  }
+  .article-destacado .container-thumbnail {
+    height: 10em;
+  }
+  .article {
+    font-size: 10px;
+    grid-template-columns: 1fr;
+  }
+  .article .container-thumbnail {
+    height: 12em;
   }
 }
