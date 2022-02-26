@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./Imagenes/Logo.jpg">
+    <link rel="icon" type="image/jpg" href="./Imagenes/Logo.jpg" alt="logo">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>SAG Polvorines</title>
@@ -13,13 +13,12 @@
     <!--<link rel="stylesheet" href="./Scss/styles.css">-->
 </head>
 
-<body>
-    <div class="container">
+<body class="container">
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
-                        <img class="img" src="./Imagenes/Logo.jpg" alt="">
+                        <img class="img" src="./Imagenes/Logo.jpg" alt="Logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -74,8 +73,6 @@
                     class="btn-link">Saber mas</a>
             </div>
 
-
-
             <div class="container-thumbail">
                 <a href="#">
                     <img src="./Imagenes/foto.jpg" alt="Escudo">
@@ -83,7 +80,6 @@
             </div>
 
         </article>
-
 
         <main class="content">
             <section>
@@ -98,7 +94,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./Imagenes/gente.jpg" class="d-block w-100" alt="...">
+                            <img src="./Imagenes/gente.jpg" class="d-block w-100" alt="gente">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Logo solamente de SAG Polvorines handball</h5>
                                 <p>Este logo fue creado en el año 2016 en el momento que se creo la pagina de Instagram
@@ -106,7 +102,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./Imagenes/Equipo con la hinchada.jpg" class="d-block w-100" alt="...">
+                            <img src="./Imagenes/Equipo con la hinchada.jpg" class="d-block w-100" alt="equipo con la hinchada">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Equipo con la hinchada</h5>
                                 <p>Luego de obtener el segundo puesto del Super 8 de la Liga Metropolitana de Balonmano
@@ -114,7 +110,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./Imagenes/Primer equipo 2021.jpg" class="d-block w-100" alt="...">
+                            <img src="./Imagenes/Primer equipo 2021.jpg" class="d-block w-100" alt="primer equipo 2021">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Primer equipo 2021</h5>
                                 <p>Foto conformada por los 16 jugadores del primer equipo mas el director tecnico
@@ -139,7 +135,7 @@
 
         <aside class="sidebar">
             <div class="jugadores">
-                <img src="./Imagenes/tobi.jpg" class="img-perfil" alt="">
+                <img src="./Imagenes/tobi.jpg" class="img-perfil" alt="tobi">
                 <div class="bio">
                     <p class="titulo">Tobias Wolf</p>
                     <p>Maximo goleador historico del club</p>
@@ -147,7 +143,7 @@
             </div>
 
             <div class="jugadores">
-                <img src="./Imagenes/cordoba.jpg" class="img-perfil" alt="">
+                <img src="./Imagenes/cordoba.jpg" class="img-perfil" alt="cordoba">
                 <div class="bio">
                     <p class="titulo">Gonzalo Silvestre</p>
                     <p>Actual integrante de la Seleccion Argentina de Beach handball</p>
@@ -156,13 +152,11 @@
             </div>
         </aside>
 
-        
-
         <footer class="footer">
             <div>
-                <ul class="ul1">
-                    <h3>Podes encontrarnos en:</h3>
-                    <li><a href="https://instagram.com/polvorineshandb?utm_medium=copy_link"
+                <ul>
+                    <p>Podes encontrarnos en:</p>
+                    <li><a class="negrita" href="https://instagram.com/polvorineshandb?utm_medium=copy_link"
                             target="_blank">Instagram</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
@@ -171,7 +165,7 @@
                         </svg>
                     </li>
                     <li>
-                        <a href="#">+54 299 4670971</a>
+                        <a class="negrita" href="#">+54 299 4670971</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path
@@ -179,7 +173,7 @@
                         </svg>
                     </li>
                     <li>
-                        <a href="#">polvorines@sagndt.org.ar</a>
+                        <a class="negrita" href="#">polvorines@sagndt.org.ar</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
@@ -191,7 +185,6 @@
             </div>
             <p>SAG Polvorines: Juan Manzanares 4000, Los Polvorines, Buenos Aires, Argentina</p>
         </footer>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

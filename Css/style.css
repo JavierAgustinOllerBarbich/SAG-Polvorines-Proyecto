@@ -52,7 +52,7 @@ a {
 }
 
 .navbar .img {
-  width: 10%;
+  width: 20%;
 }
 
 .header {
@@ -202,24 +202,37 @@ a {
   width: 100%;
 }
 
-.btn-link {
+.btn-link, .input {
   color: #fff;
   cursor: pointer;
   display: inline-block;
   padding: 0.625em;
-  background-color: #262626;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-decoration: none;
+  border-radius: 10%;
 }
 
-.btn-link:hover {
-  background: #4b1818;
+.btn-link:hover, .input:hover {
+  background-color: #f5efef;
   text-decoration: none;
-  color: #fff;
+  color: #080808;
+}
+
+.btn-link, .input {
+  background-color: #f30d0d;
+}
+
+.input {
+  background-color: #f30d0d;
+}
+
+.input:hover {
+  background-color: #ffebdc;
+  color: #0e0c0b;
 }
 
 .content {
@@ -256,30 +269,9 @@ a {
   margin-bottom: 25px;
 }
 
-.input {
-  background: #bea8a8;
-  color: #ffebdc;
-  border: none;
-  font-size: 1em;
-  width: 23.8;
-  border-radius: .4em;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 2%;
-  padding: 2%;
-}
-
-.input:hover {
-  background-color: #ffebdc;
-  color: #0e0c0b;
-}
-
 .container .footer {
       grid-template-areas: footer;
-  background: lightgray;
+  background-color: #3a2121;
   font-size: 1.25em;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -299,6 +291,10 @@ a {
 
 .section .iframe {
   width: 100%;
+}
+
+.negrita {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1200px) {
